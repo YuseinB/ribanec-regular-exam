@@ -20,6 +20,8 @@ jobs:
         cache: 'npm'
     - name: Install NPM dependencies
       run: npm install
+    - name: install playwright
+      run: npx playwright install
     - name: Run the unit tests
       run: npm run test:unit
     - name: Display softuni username
